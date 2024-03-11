@@ -1,0 +1,52 @@
+{
+  "name": "zustand-slice",
+  "version": "0.1.0",
+  "description": "Namespaced slice support for Zustand.",
+  "author": "Scotty Weeks - https://github/weeksie",
+  "license": "MIT",
+  "keywords": [
+    "state management",
+    "zustand",
+    "slice",
+    "react",
+    "redux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weeksie/zustand-slice.git"
+  },
+  "main": "dist/zustand-slice.umd.js",
+  "module": "dist/zustand-slice.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/zustand-slice.es.js",
+      "require": "./dist/zustand-slice.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc",
+    "test": "vitest --ui --coverage"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.2.1",
+    "@types/react": "^18.2.64",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.3.1",
+    "@vitest/ui": "^1.3.1",
+    "jsdom": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.5",
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.3.1",
+    "zustand": "^4.5.2"
+  },
+  "peerDependencies": {
+    "zustand": ">=4.5"
+  }
+}
