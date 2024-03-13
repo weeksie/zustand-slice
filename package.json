@@ -28,7 +28,7 @@
     }
   },
   "scripts": {
-    "build": "vite build && tsc",
+    "build": "vite build",
     "test": "vitest --ui --coverage"
   },
   "devDependencies": {
