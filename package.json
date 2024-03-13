@@ -15,14 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/weeksie/zustand-slice.git"
   },
-  "main": "dist/zustand-slice.umd.js",
-  "module": "dist/zustand-slice.es.js",
   "files": [
     "dist"
   ],
+  "Source": "./src/index.ts",
+  "main": "./dist/zustand-slice.umd.js",
+  "module": "./dist/zustand-slice.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/zustand-slice.es.js",
       "require": "./dist/zustand-slice.umd.js"
     }
