@@ -20,9 +20,9 @@
   "files": [
     "dist"
   ],
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "dist/index.d.ts",
       "import": "./dist/zustand-slice.es.js",
       "require": "./dist/zustand-slice.umd.js"
     }
